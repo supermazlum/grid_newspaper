@@ -1,0 +1,163 @@
+/*
+Farben: rgb(233, 233, 224), #333
+ */
+
+/*=======================
+        GENERALS
+========================*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(233, 233, 224);
+    /* font-family: CormorantGaramond; */
+}
+
+
+/*=======================
+        HEADER
+========================*/
+header h1 {
+    font-size: 3rem;
+    margin: 1.5vh;
+    text-align: center;
+}
+
+header div {
+    display: flex;
+    justify-content: space-evenly;
+    color: #333;
+    border-top: 3px double black;
+    border-bottom: 3px double black;
+    margin-bottom: 2%;
+}
+
+
+/*=======================
+        MAIN #section
+========================*/
+main h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+main section div img {
+    width: 100%;
+}
+
+main section div figure figcaption{
+    font-style: italic;
+}
+
+
+/*=======================
+        MAIN #burning_box
+========================*/
+
+main section  #burning_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/*=======================
+        MAIN #articles
+========================*/
+main section #articles {
+    /* width: 35vw; */
+}
+main section #articles h4 {
+    font-size: 1.5rem;
+}
+
+main section #articles p {
+    font-size: 1.1rem;
+}
+
+
+/*=======================
+        ASIDE
+========================*/
+aside {
+    /* width: 10vw; */
+    text-align: center;
+}
+
+aside h5 {
+    font-size: 1.4rem;
+    margin-bottom: 2vh;
+}
+
+aside div h4 {
+    font-size: 2rem;
+}
+
+aside div h6 {
+    font-size: 3.8rem;
+}
+
+aside div p {
+    font-size: 1.3rem;
+}
+
+aside article {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+aside article div {
+    border: 3px double black;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+aside p {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+aside a {
+    color: #333;
+    font-size: 1.9rem;
+}
+
+
+aside article div img {
+    width: 70%;
+    filter: grayscale(100%);
+}
+
+
+
+/*=======================
+        MAIN #grid
+========================*/
+main {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: repeat(15, 5vh);
+}
+
+main section h2 {
+    grid-column: 1/3;
+}
+
+/* main .articles_right {
+    grid-column: 1/2;
+    grid-row: 2/16;
+} */
+
+/* main #articles {
+    grid-column: 1/2;
+    grid-row: 2/16;
+} */
